@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Project 120 - 121</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="https://i.pinimg.com/originals/45/2d/47/452d4753aa8887ab17780023a2c08d4d.jpg">
+        <ol>
+        <div class="test_image_and_result col-xs-12">
+            <h1 class="btn btn-info" id="heading">Google Lens VS. MobileNet Testing</h1>
+            <li class="col-sm-4 col-xs-12">
+                <center>
+                 <b id="images_id">Test Images - </b>
+                 <img src="WIN_20220201_17_20_53_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_04_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_07_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_17_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_27_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_32_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_40_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_46_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_49_Pro.jpg" class="img-responsive">
+                 <img src="WIN_20220201_17_21_55_Pro.jpg" class="img-responsive">
+                </center>
+            </li>
+
+        <h5 id="google_lens_result" class="col-sm-4 col-xs-12">
+            Output for <b>Google Lens</b> : 
+            <span>
+                1. Fiskars Ea0312 Scissors For Kids Green, Correct
+                2. Toothpick, Correct
+                3. VicTsing MMO57, Correct
+                4. Panasonic RP-HF100, Correct
+                5. Bic A Black Pen - Office | Color: Black, Correct
+                6. Crayola Erasable Colored Pencils, Correct
+                7. No Good Result
+                8. Frankiln D Roosevelt dime, Correct
+                9. No Good Result
+                10. Ray-Ban Wayfarer, Correct
+            </span>
+        </h5>
+        <h5 id="real_time_result" class="col-sm-4 col-xs-12">
+            Output for <b>MobileNet Model</b> : 
+            <span>
+                1. Sunglasses, Correct
+                2. Toothpick, Correct
+                3. Mouse, Correct
+                4. Headphones, Correct
+                5. Pen, Correct
+                6. Erasable Colored Pencil, Correct
+                7. Pen, Incorrect, the right answer was Pencil
+                8. Dime, Correct
+                9. Pencil Sharpener, Correct
+                10. Sunglasses, Correct
+            </span>
+        </h5>
+        <div id="conclusion">
+          <center>
+            <h4 id="heading_label">Overall Result  - </h4>
+            <hr>
+            <p id="conclusion_paragraph">
+                Here I find that MobileNet is more accurate than the Google Lens because of the fact that Google Lens couldn't identify two out of the 10 objects I gave it, while the MobileNet model was able to only 1 out of 10 wrong. This is why I believe the MobileNet model is better for identification, but if you want to have detail about the objects you are identifying then you should go with Google Lens.
+            </p>
+          </center>
+        </div>
+        <hr>
+        </div>
+        <br>
+        </ol>
+        <div class="copy_right_footer">
+            Developed by - Jayanthsai Gogineni
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+#heading
+{
+    font-size: 25px;
+    color: darkslategray;
+    float: center;
+}
+
+#heading_label
+{
+    margin-right: 20%;
+    color: whitesmoke;
+}
+
+#real_time_result
+{
+    color: whitesmoke;
+}
+
+#google_lens_result
+{
+    color: whitesmoke;
+}
+
+#images_id
+{
+    color: whitesmoke;
+}
+
+#conclusion_paragraph
+{
+    color: white;
+}
